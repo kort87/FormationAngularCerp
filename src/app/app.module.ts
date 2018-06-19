@@ -8,6 +8,9 @@ import { HomeModule } from './home/home.module';
 import { PageNotFoundModule } from './page-not-found/page-not-found.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ItemsModule } from './items/items.module';
+import { AppRoutingModule } from './app-routing.module';
+import { Router } from '@angular/router';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,18 @@ import { ItemsModule } from './items/items.module';
     SharedModule,
     CoreModule,
     HomeModule,
-    PageNotFoundModule,
     ItemsModule,
-    NgbModule.forRoot()
+    AppRoutingModule,
+    NgbModule.forRoot(),
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(router: Router) {
+    if (!environment.production) {
+      console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+    }
+  }
+}
