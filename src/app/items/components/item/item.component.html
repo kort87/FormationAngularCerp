@@ -1,11 +1,15 @@
-<div class="card" >
-    <div class="card-header">
-      {{ item.state }}
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">{{ item.name | titlecase | uppercase }}</h5>
-      <p class="card-text"> {{ item.reference }}</p>
-      <a href="#" class="btn btn-primary" *ngIf="item.name === 'Romain'" a>Go somewhere</a>
+<div class="card">
+  <div class="card-header">
+    <!-- <span class="a-livrer" *ngIf="state.ALIVRER === item.state">{{ item.state }}</span>
+    <span class="en-cours" *ngIf="state.ENCOURS === item.state">{{ item.state }}</span>
+    <span class="livree" *ngIf="state.LIVREE === item.state">{{ item.state }}</span> -->
+    <span [appState]="item.state">{{ item.state }}</span>
 
-    </div>
   </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ item.name | titlecase | uppercase }}</h5>
+    <p class="card-text"> {{ item.reference }}</p>
+    <button href="#" class="btn btn-primary" *ngIf="state.ALIVRER === item.state" (click)='changeState(item.state)'>{{ state.ENCOURS }}</button>
+    <button href="#" class="btn btn-primary" *ngIf="state.ENCOURS === item.state" (click)='changeState(item.state)'>{{ state.LIVREE }}</button>
+  </div>
+</div>

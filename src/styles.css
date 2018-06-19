@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.state-a-livrer {
+  background-color:rgb(255, 0, 0);
+}
+
+.state-en-cours {
+  background-color:rgb(17, 0, 255);
+}
+
+.state-livree {
+  background-color:rgb(30, 255, 0);
+}
