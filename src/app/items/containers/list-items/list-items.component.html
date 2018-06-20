@@ -1,9 +1,6 @@
-<!-- <li *ngFor="let item of collection">
-  {{ item.name | uppercase }}
-  <p *ngIf=""
-</li> -->
 <div class="container">
-  <ng-container *ngFor="let col of collection">
+  <input type="text" #search (keyup)="0" />
+  <ng-container *ngFor="let col of collection | filter:search.value">
     <app-item [item]="col"></app-item>
   </ng-container>
 </div>

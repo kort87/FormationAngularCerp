@@ -5,7 +5,7 @@ import { ItemComponent } from './components/item/item.component';
 import { SharedModule } from '../shared/shared.module';
 import { ItemsRoutingModule } from './items-routing.module';
 import { AddComponent } from './containers/add/add.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AddItemComponent } from './containers/add-item/add-item.component';
 
 @NgModule({
@@ -13,8 +13,7 @@ import { AddItemComponent } from './containers/add-item/add-item.component';
     CommonModule,
     SharedModule,
     ItemsRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
+    FormsModule
   ],
   exports: [ListItemsComponent],
   declarations: [ListItemsComponent, ItemComponent, AddComponent, AddItemComponent]

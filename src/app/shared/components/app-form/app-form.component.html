@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="addForm" class="form" novalidate (ngSubmit)="process()">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Nom et prénom" formControlName="name">
+          <div class="alert alert-danger" *ngIf="addForm.get('name').invalid && addForm.get('name').touched">Champ invalide</div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Référence" formControlName="reference">
+          <div class="alert alert-danger" *ngIf="addForm.get('reference').invalid && addForm.get('reference').touched">Champ référence invalide</div>
+        </div>
+        <div class="form-group">
+            <select class="form-control" formControlName="state">
+                <option *ngFor="let intitule of intitules" [ngValue]="intitule">{{ intitule }}</option>
+              </select>
+        </div>
+        <!-- <div class="alert alert-danger" *ngIf="checkErrors()">Champ invalide</div> -->
+        <div class="form-group">
+          <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary">Valider</button>
+        </div>
+      </form>
+</div>
