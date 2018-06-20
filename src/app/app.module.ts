@@ -11,7 +11,6 @@ import { ItemsModule } from './items/items.module';
 import { AppRoutingModule } from './app-routing.module';
 import { Router } from '@angular/router';
 import { environment } from '../environments/environment';
-import { AddRoutingModule } from './items/containers/add/add-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { AddRoutingModule } from './items/containers/add/add-routing.module';
     CoreModule,
     HomeModule,
     ItemsModule,
-    AddRoutingModule,
     AppRoutingModule,
     NgbModule.forRoot(),
     PageNotFoundModule

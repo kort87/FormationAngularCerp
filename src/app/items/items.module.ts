@@ -5,16 +5,18 @@ import { ItemComponent } from './components/item/item.component';
 import { SharedModule } from '../shared/shared.module';
 import { ItemsRoutingModule } from './items-routing.module';
 import { AddComponent } from './containers/add/add.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddItemComponent } from './containers/add-item/add-item.component';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
     ItemsRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [ListItemsComponent],
-  declarations: [ListItemsComponent, ItemComponent, AddComponent]
+  declarations: [ListItemsComponent, ItemComponent, AddComponent, AddItemComponent]
 })
 export class ItemsModule { }
