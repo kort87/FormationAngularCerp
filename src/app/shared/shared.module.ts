@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppFormComponent } from './components/app-form/app-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
+import { RefCommandePipe } from './pipes/ref-commande.pipe';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { FilterPipe } from './pipes/filter.pipe';
     NgbModule,
     ReactiveFormsModule
   ],
-  declarations: [NavComponent, StateDirective, AppFormComponent, FilterPipe],
-  exports: [NavComponent, StateDirective, AppFormComponent, FilterPipe]
+  declarations: [NavComponent, StateDirective, AppFormComponent, FilterPipe, RefCommandePipe],
+  exports: [NavComponent, StateDirective, AppFormComponent, FilterPipe, RefCommandePipe]
 })
 export class SharedModule { }

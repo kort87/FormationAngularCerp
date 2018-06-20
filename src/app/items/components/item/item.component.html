@@ -9,6 +9,7 @@
   <div class="card-body">
     <h5 class="card-title">{{ item.name | titlecase | uppercase }}</h5>
     <p class="card-text"> {{ item.reference }}</p>
+    <p class="card-text"> Bon de commande n° : {{ item.reference | refCommande: item.state }}</p>
     <button href="#" class="btn btn-primary" *ngIf="state.ALIVRER === item.state" (click)='changeState(item.state)'>{{ state.ENCOURS }}</button>
     <button href="#" class="btn btn-primary" *ngIf="state.ENCOURS === item.state" (click)='changeState(item.state)'>{{ state.LIVREE }}</button>
   </div>
