@@ -30,6 +30,13 @@ export class CollectionService {
      * Get item from collection
      */
 
+
+     /**
+      * Add item in collection
+      */
+     public addItem(item: Item): void {
+       this._collection.push(item);
+     }
      /**
       * Update item in collection
       */

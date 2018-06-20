@@ -1,3 +1,7 @@
+.card, .form {
+  margin-top: 1rem;
+}
+
 .state-a-livrer {
   background-color:rgb(255, 0, 0);
 }
