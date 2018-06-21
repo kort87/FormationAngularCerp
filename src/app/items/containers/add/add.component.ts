@@ -12,19 +12,17 @@ import { Router } from '@angular/router';
 export class AddComponent implements OnInit {
   public intitules = Object.values(States);
   public newItem: Item;
-  private collection: Item[];
 
   constructor(private collectionService: CollectionService,
               private router: Router) { }
 
   ngOnInit() {
     this.init();
-    this.collection = this.collectionService.collection;
   }
 
   private init(): void {
     this.newItem = {
-      id: '',
+      id: null,
       name: '',
       reference: '',
       state: States.ALIVRER
@@ -33,9 +31,15 @@ export class AddComponent implements OnInit {
 
   public process(): void {
     console.log(this.newItem);
-    this.collectionService.addItem(this.newItem);
-    this.init();
-    this.router.navigate(['/list']);
+    this.collectionService.addItem(this.newItem).subscribe(
+      (data) => {
+        console.log(data);
+        if (data) {
+          this.init();
+          this.router.navigate(['/items/list']);
+        }
+      }
+    );
   }
 
 }

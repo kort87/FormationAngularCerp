@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { States } from '../../../shared/enums/states.enum';
 import { Router } from '@angular/router';
 import { CollectionService } from '../../../core/services/collection.service';
@@ -23,7 +23,17 @@ export class AddItemComponent implements OnInit {
   }
 
   public add(item: Item): void {
-    this.collectionService.addItem(item);
-    this.router.navigate(['/list']);
+    console.log(item);
+    this.collectionService.addItem(item).subscribe(
+      (data) => {
+        if (data) {
+          this.router.navigate(['/items/list']);
+        }
+      }
+    );
   }
+
+  // private getItem(): Item {
+  //   return
+  // }
 }

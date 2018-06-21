@@ -7,10 +7,13 @@ import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { PageNotFoundModule } from './page-not-found/page-not-found.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ItemsModule } from './items/items.module';
 import { AppRoutingModule } from './app-routing.module';
 import { Router } from '@angular/router';
 import { environment } from '../environments/environment';
+
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './core/services/in-memory-data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,17 @@ import { environment } from '../environments/environment';
     SharedModule,
     CoreModule,
     HomeModule,
-    ItemsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    PageNotFoundModule
+    PageNotFoundModule,
+    HttpClientModule,
+
+// The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+// and returns simulated server responses.
+// Remove it when a real server is ready to receive requests.
+HttpClientInMemoryWebApiModule.forRoot(
+  InMemoryDataService, { dataEncapsulation: false }
+)
   ],
   providers: [],
   bootstrap: [AppComponent]

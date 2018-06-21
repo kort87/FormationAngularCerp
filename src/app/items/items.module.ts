@@ -7,15 +7,18 @@ import { ItemsRoutingModule } from './items-routing.module';
 import { AddComponent } from './containers/add/add.component';
 import { FormsModule } from '@angular/forms';
 import { AddItemComponent } from './containers/add-item/add-item.component';
+import { EditComponent } from './components/edit/edit.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
     ItemsRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [ListItemsComponent],
-  declarations: [ListItemsComponent, ItemComponent, AddComponent, AddItemComponent]
+  declarations: [ListItemsComponent, ItemComponent, AddComponent, AddItemComponent, EditComponent]
 })
 export class ItemsModule { }

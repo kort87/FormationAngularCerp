@@ -1,0 +1,93 @@
+[debug] [2018-06-21T07:51:34.614Z] ----------------------------------------------------------------------
+[debug] [2018-06-21T07:51:34.617Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase login
+[debug] [2018-06-21T07:51:34.617Z] CLI Version:   3.18.6
+[debug] [2018-06-21T07:51:34.617Z] Platform:      win32
+[debug] [2018-06-21T07:51:34.617Z] Node Version:  v8.11.3
+[debug] [2018-06-21T07:51:34.618Z] Time:          Thu Jun 21 2018 09:51:34 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2018-06-21T07:51:34.618Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=663152330&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-06-21T07:52:44.027Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AAAOmXvnJDD5xPtBwxSqUhrG0IYFcZtxhtAz1iumSmewXrUHH2VZIPGZpbPGdwrJAAolAN7B75CkPfau6DJaxkI',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Thu Jun 21 2018 09:52:44 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2018-06-21T07:52:48.314Z] Token Fetch Error: Error
+    at new FirebaseError (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\lib\error.js:11:16)
+    at Request._callback (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:35:11)
+    at self.callback (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+[debug] [2018-06-21T08:00:48.877Z] ----------------------------------------------------------------------
+[debug] [2018-06-21T08:00:48.879Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase login
+[debug] [2018-06-21T08:00:48.879Z] CLI Version:   3.18.6
+[debug] [2018-06-21T08:00:48.879Z] Platform:      win32
+[debug] [2018-06-21T08:00:48.879Z] Node Version:  v8.11.3
+[debug] [2018-06-21T08:00:48.880Z] Time:          Thu Jun 21 2018 10:00:48 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2018-06-21T08:00:48.880Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=117513496&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-06-21T08:01:08.094Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AACk7MwIr8IgmPV_q3KjD0ID5OZFinS62NoZkkgpLwDIzHrb7kWr9FXftgNB5PswDlpJMtjnmfO30IdAF2N_VE4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Thu Jun 21 2018 10:01:08 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2018-06-21T08:01:12.676Z] Token Fetch Error: Error
+    at new FirebaseError (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\lib\error.js:11:16)
+    at Request._callback (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:35:11)
+    at self.callback (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+[debug] [2018-06-21T08:12:08.787Z] ----------------------------------------------------------------------
+[debug] [2018-06-21T08:12:08.789Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase login
+[debug] [2018-06-21T08:12:08.789Z] CLI Version:   3.18.6
+[debug] [2018-06-21T08:12:08.789Z] Platform:      win32
+[debug] [2018-06-21T08:12:08.789Z] Node Version:  v8.11.3
+[debug] [2018-06-21T08:12:08.790Z] Time:          Thu Jun 21 2018 10:12:08 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2018-06-21T08:12:08.790Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=328383357&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2018-06-21T08:12:27.888Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ { code: '4/AACtFqiifnoinsVvm33TsMJLawO_wldcUkMEVsrr2vYCZb-mpaT686i4dYhllKxksUcXSa9LGVW_ZXxuZuZZGVE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  redirect_uri: 'http://localhost:9005',
+  grant_type: 'authorization_code' } 
+ Thu Jun 21 2018 10:12:27 GMT+0200 (Paris, Madrid (heure d’été))
+[debug] [2018-06-21T08:12:32.362Z] Token Fetch Error: Error
+    at new FirebaseError (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\lib\error.js:11:16)
+    at Request._callback (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:35:11)
+    at self.callback (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at Request.onRequestError (C:\Users\robena\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
